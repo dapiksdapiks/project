@@ -1,0 +1,715 @@
+@font-face
+    font-family: 'Nunito Sans ExtraBold'
+    src: url('../fonts/NunitoSans-ExtraBold.eot')
+    src: url('../fonts/NunitoSans-ExtraBold.eot?#iefix') format("embedded-opentype"), url('../fonts/NunitoSans-ExtraBold.woff') format("woff"), url('../fonts/NunitoSans-ExtraBold.ttf') format("truetype")
+    font-weight: normal
+    font-style: normal
+
+@font-face 
+    font-family: 'Poppins Semibold'
+    src: url('../fonts/Poppins-SemiBold.eot')
+    src: url('../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),url('../fonts/Poppins-SemiBold.woff') format('woff'),url('../fonts/Poppins-SemiBold.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+@font-face 
+    font-family: 'Nunito Sans Semibold'
+    src: url('../fonts/NunitoSans-SemiBold.eot')
+    src: url('../fonts/NunitoSans-SemiBold.eot?#iefix') format('embedded-opentype'),url('../fonts/NunitoSans-SemiBold.woff') format('woff'),url('../fonts/NunitoSans-SemiBold.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+@font-face 
+    font-family: 'Poppins Regular'
+    src: url('../fonts/Poppins-Regular.eot')
+    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/Poppins-Regular.woff') format('woff'),url('../fonts/Poppins-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+
+header
+    position: relative
+    padding: 0px 61px 0 61px
+
+.menu
+    position: absolute
+    .hamburger
+        display: block
+        position: absolute
+        margin-top: 76px
+        width: 20px
+        height: 14px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: black
+            margin-bottom: 4px
+            transition: 0.3s all
+    .hamburger:hover
+        span
+            margin-bottom: -2px 
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    &_links
+        position: absolute
+        margin-top: 69px
+        margin-left: 67px
+        font-family: "Nunito Sans ExtraBold"
+        font-size: 14px
+        font-weight: 400
+        line-height: 29px
+        text-transform: uppercase
+        letter-spacing: 3px
+        color: #202023
+        text-decoration: none
+        a
+            color: #202023
+            text-decoration: none
+            transition: 0.1s linear
+            fill: red
+
+        a:hover 
+            color: #b4d3d3
+            transition: 0.1s linear
+    .menu_links a + a 
+        margin-left: 48px
+
+    .menu_logo
+        width: 225px
+        height: 32px
+        padding-left: 787px
+        padding-top: 67px
+    
+    .menu_search
+        width: 20px
+        height: 20px
+        margin-left: 1777px
+.main
+    height: 1080px
+    background: url('../img/main.jpg') center (center / cover) no-repeat
+    &_button:hover 
+        background-color: #2D2F33
+        transition: 0.2s linear
+    .main_icons
+        position: absolute
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        margin-top: 273px
+        margin-left: 64px
+        .facebook
+            width: 16px
+            height: 16px
+            background: url("../icons/16px-logo-facebook.svg") center (center/cover) no-repeat
+            margin-bottom: 32px
+            transition: 0.1s linear
+            .face
+                width: 16px
+                height: 16px
+                background: url("../icons/facebook.svg") center (center/cover) no-repeat
+                opacity: 0
+                transition: 0.1s linear
+            
+        .instagram
+            width: 16px
+            height: 16px
+            background: url("../icons/16px-logo-instagram.svg") center (center/cover) no-repeat
+            margin-bottom: 32px
+            transition: 0.1s linear
+            .inst
+                width: 16px
+                height: 16px
+                background: url("../icons/instagram-logo.svg") center (center/cover) no-repeat
+                opacity: 0
+                transition: 0.1s linear
+
+        .youtube
+            width: 16px
+            height: 16px
+            background: url("../icons/16px-logo-youtube.svg") no-repeat
+            margin-bottom: 32px
+            transition: 0.1s linear
+            .you
+                width: 16px
+                height: 16px
+                background: url("../icons/youtube.svg") center (center/cover) no-repeat
+                opacity: 0
+                transition: 0.1s linear
+
+        .twitter
+            width: 16px
+            height: 16px
+            background: url("../icons/16px-logo-twitter.svg") no-repeat
+            margin-bottom: 32px
+            transition: 0.1s linear
+            .twit
+                width: 16px
+                height: 16px
+                background: url("../icons/twitter.svg") center (center/cover) no-repeat
+                opacity: 0
+                transition: 0.1s linear
+        .facebook:hover
+            .face
+                opacity: 1
+                transition: 0.2s linear
+            background: none
+        .instagram:hover
+            .inst
+                opacity: 1
+                transition: 0.2s linear
+            background: none
+        .youtube:hover
+            .you
+                opacity: 1
+                transition: 0.2s linear
+            background: none
+        .twitter:hover
+            .twit
+                opacity: 1
+                transition: 0.2s linear
+            background: none
+        a
+            margin-bottom: 32px
+            transition: 0.1s linear
+
+    &_divider
+        position: absolute
+        width: 2px
+        height: 60px
+        background-color: #1a1a1d
+        margin-top: 655px
+        margin-left: 66px
+    
+    &_dividertwo
+        position: absolute
+        width: 56px
+        height: 2px
+        background-color: #1a1a1d
+        top: 865px
+        right: 194px
+    &_numbers
+        position: absolute
+        list-style-type: none
+        top: 793px
+        right: 352px
+        li
+            opacity: 0.7
+            color: #696970
+            font-family: Nunito Sans ExtraBold
+            font-size: 13px
+            font-weight: 400
+            line-height: 48px
+            text-transform: uppercase
+            margin-bottom: 1px
+    &_subtitle
+        color: #1a1a1d
+        font-family: Nunito Sans Semibold
+        font-size: 17px
+        font-weight: 400
+        line-height: 30px
+        text-transform: uppercase
+        letter-spacing: 3.4px
+        position: absolute
+        margin-top: 790px
+        margin-left: 239px
+
+.main_button
+    display: inline-flex
+    position: absolute
+    width: 259px
+    height: 110px
+    background-color: #b4d3d3
+    text-align: center
+    margin: 970px 0 0 61px
+    color: #ffffff
+    font-family: "Nunito Sans Semibold"
+    font-size: 14px
+    font-weight: 400
+    line-height: 30px
+    text-transform: uppercase
+    letter-spacing: 2.8px
+    justify-content: center
+    align-items: center
+    padding-top: 1px
+    cursor: pointer
+    transition: 0.2s linear
+
+    
+
+.main_buttonplay
+    width: 110px
+    height: 110px
+    background-color: #ffffff
+    display: inline-flex
+    position: absolute
+    justify-content: center
+    align-items: center
+    margin: 970px 0 0 320px
+    cursor: pointer
+
+.main_header
+    position: absolute
+    color: #1a1a1d
+    font-family: Poppins Regular
+    font-size: 101px
+    font-weight: 300
+    line-height: 100px
+    letter-spacing: 2.02px
+    margin-top: 533px
+    margin-left: 233px
+
+
+.models
+    min-height: 1370px
+    display: block
+    padding: 100px 120px 61px 120px
+    &_menu
+        margin: 0 auto
+        color: #696970
+        font-family: Nunito Sans ExtraBold
+        font-size: 12px
+        font-weight: 400
+        line-height: 48px
+        text-transform: uppercase
+        text-align: center
+        a
+            line-height: 1
+            display: inline-block
+            margin-right: 60px
+            color: #696970
+            letter-spacing: 2px
+            text-decoration: none
+            cursor: pointer
+    &_str1
+        &:after
+            display: block
+            content: ""
+            height: 2px
+            width: 0%
+            background-color: #1a1a1d
+            transition: width .3s ease-in-out
+            margin-top: 16px
+            margin-left: -25px
+        &:hover 
+            text-decoration: none
+            color: #1a1a1d
+        &:hover:after,a:focus:after
+            width: 200%
+            color: #1a1a1d
+    &_str2
+        &:after
+            display: block
+            content: ""
+            height: 2px
+            width: 0%
+            background-color: #1a1a1d
+            transition: width .3s ease-in-out
+            margin-top: 16px
+            margin-left: -27px
+        &:hover 
+            text-decoration: none
+            color: #1a1a1d
+        &:hover:after,a:focus:after
+            width: 170%
+            color: #1a1a1d
+    &_str3
+        &:after
+            display: block
+            content: ""
+            height: 2px
+            width: 0%
+            background-color: #1a1a1d
+            transition: width .4s ease-in-out
+            margin-top: 16px
+            margin-left: -28px
+        &:hover 
+            text-decoration: none
+            color: #1a1a1d
+        &:hover:after,a:focus:after
+            width: 170%
+            color: #1a1a1d
+    &_str4
+        &:after
+            display: block
+            content: ""
+            height: 2px
+            width: 0%
+            background-color: #1a1a1d
+            transition: width .3s ease-in-out
+            margin-top: 16px
+            margin-left: -27px
+        &:hover 
+            text-decoration: none
+            color: #1a1a1d
+        &:hover:after,a:focus:after
+            width: 200%
+            color: #1a1a1d
+
+.models
+    &_btn
+        position: relative
+        width: 220px
+        height: 60px
+        border-radius: 30px
+        background-color: #b4d3d3
+        display: inline-flex
+        text-align: center
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        color: #ffffff
+        font-family: "Nunito Sans ExtraBold"
+        font-size: 13px
+        font-weight: 400
+        line-height: 30px
+        text-transform: uppercase
+        letter-spacing: 2.8px
+        margin-top: 60px
+        margin-left: 724px
+        transition: 0.1s linear
+    &_btn:hover
+        background-color: #2D2F33
+        transition: 0.2s linear
+    &_blocks
+        height: 980px
+        width: 1680px
+        margin-top: 100px
+        .block
+            position: relative
+            width: 415px
+            height: 490px
+            background-color: #e2e8e8
+            float: left
+            transition: 0.2s linear
+            .button
+                display: flex
+                justify-content: center
+                position: absolute
+                align-items: center
+                width: 56px
+                height: 56px
+                top: 20px
+                right: 20px
+                background-color: #b4d3d3
+                border-radius: 100%
+                border: none
+                outline: none
+                opacity: 0
+                transition: 0.2s linear
+            .button:hover
+                background-color: #67A1A1
+                transition: 0.2s linear
+            .title
+                position: relative
+                color: #ffffff
+                font-family: Poppins Regular
+                font-size: 30px
+                font-weight: 400
+                letter-spacing: 0.6px
+                margin: 0 auto
+                margin-top: 351px
+                text-align: center
+                opacity: 0
+                transition: 0.2s linear
+            .subtitle
+                position: relative
+                color: #aeaeb7
+                font-family: Nunito Sans ExtraBold
+                font-size: 12px
+                font-weight: 400
+                text-transform: uppercase
+                letter-spacing: 2.4px
+                margin: 0 auto
+                text-align: center
+                opacity: 0
+                transition: 0.2s linear
+        .block:hover 
+            background-color: #2D2F33
+            transition: 0.4s linear
+            .button
+                opacity: 1
+                transition: 0.4s
+            .title
+                opacity: 1
+                transition: 0.4s
+            .subtitle
+                opacity: 1
+                transition: 0.4s
+        .color
+            background-color: #d3dcdc
+            
+
+.news
+    min-height: 1347px
+    padding: 59px 120px 167px 120px
+    &_title
+        color: #1a1a1d
+        font-family: Poppins Regular
+        font-size: 60px
+        font-weight: 400
+        line-height: 79px
+        text-align: center
+    &_divider
+        width: 150px
+        height: 2px
+        background-color: #242424
+        margin: 0 auto
+        margin-top: 50px
+    &_section
+        display: flex
+        height: 142px
+        width: 1679px
+        margin-top: 68px
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        .newsblock
+            height: 141px
+            width: 526px
+        .newsblock:hover
+            .news_sectiontitle
+                color: #87bbbc
+                transition: 0.1s linear
+    &_sectionimg
+        position: absolute
+        width: 200px
+        height: 139px
+        background-color: #e2e8e8
+    
+.news_sectiontitle
+    margin-left: 242px
+    color: #1a1a1d
+    font-family: Poppins Semibold
+    font-size: 20px
+    font-weight: 500
+    line-height: 32px
+    transition: 0.1s linear
+
+
+.news_sectionsubtitle
+    color: #77777e
+    font-family: Nunito Sans Semibold
+    font-size: 16px
+    font-weight: 400
+    line-height: 40px
+    margin-left: 242px
+
+
+.news_bigblock
+    margin-top: 50px
+    height: 994px
+    width: 1680px 
+.news_bigblockone
+    display: inline-block
+    position: absolute
+    width: 684px
+    height: 520px
+    background-color: #e2e8e8
+    .trending
+        position: absolute
+        display: flex
+        justify-content: center
+        position: absolute
+        align-items: center
+        width: 206px
+        height: 56px
+        background-color: #ffffff
+        color: #1a1a1d
+        font-family: Nunito Sans ExtraBold
+        font-size: 14px
+        font-weight: 400
+        line-height: 30px
+        text-transform: uppercase
+        letter-spacing: 2.8px
+        top: 10px
+        right: 10px
+    .trending:after
+        position: absolute
+        display: block
+        content: ""
+        height: 2px
+        width: 0%
+        background-color: #1a1a1d
+        transition: width .3s ease-in-out
+        margin-top: 17px
+    .trending:hover 
+        text-decoration: none
+        color: #1a1a1d
+    .trending:hover:after,a:focus:after
+        width: 45%
+        color: #1a1a1d
+.news_bigbutton
+    display: inline-block
+    border: none
+    outline: none
+    position: relative
+    width: 420px
+    height: 520px
+    background-color: #b4d3d3
+    background-image: linear-gradient(4deg, #b4d3d3 0%, #d9e7e7 100%)
+    .buttontitle
+        position: absolute
+        bottom: 108px
+        color: #ffffff
+        font-family: Poppins Regular
+        font-size: 30px
+        font-weight: 500
+        line-height: 48px
+        // Text style for "Use Your R"
+        letter-spacing: -0.6px
+        text-align: left
+        left: 61px
+        right: 91px
+    img
+        position: absolute
+        left: 64px
+        bottom: 280px
+        transition: 0.4s
+    .buttonsubtitle
+        position: absolute
+        bottom: 57px
+        left: 61px
+        color: #ffffff
+        font-family: Nunito Sans Semibold
+        font-size: 16px
+        font-weight: 400
+        line-height: 40px
+
+.news_bigbutton:hover
+    img
+        left: 240px
+        transition: 0.4s
+
+
+.news_bigblock
+    position: relative
+    .blocktwo
+        display: inline-block
+        position: absolute
+        width: 528px
+        height: 994px
+        right: 0px
+        .img
+            width: 527px
+            height: 856px
+            background-color: #e2e8e8
+        .title
+            margin-top: 37px
+            color: #1a1a1d
+            font-family: Poppins Regular
+            font-size: 24px
+            font-weight: 500
+            line-height: 36px
+            transition: 0.1s linear
+        .subtitle
+            color: #77777e
+            font-family: Nunito Sans Semibold
+            font-size: 16px
+            font-weight: 400
+            line-height: 40px
+    .blocktwo:hover
+        .title
+            color: #87bbbc
+            transition: 0.1s linear
+
+.blockthree
+    display: inline-block
+    position: absolute
+    width: 527px
+    height: 424px
+    bottom: 0px
+    left: 0px
+    .img
+        width: 527px
+        height: 286px
+        background-color: #e2e8e8
+    .title
+        color: #1a1a1d
+        font-family: Poppins Regular
+        font-size: 24px
+        font-weight: 500
+        line-height: 36px
+        margin-top: 37px
+        transition: 0.1s linear
+    .subtitle
+        color: #77777e
+        font-family: Nunito Sans Semibold
+        font-size: 16px
+        font-weight: 400
+        line-height: 40px
+        margin-top: 3px
+.blockthree:hover
+    .title
+        color: #87bbbc
+        transition: 0.1s linear
+
+.blockfour
+    display: inline-block
+    position: absolute
+    width: 527px
+    height: 422px
+    bottom: 0px
+    left: 577px
+    .img
+        width: 527px
+        height: 422px
+        background-color: #e2e8e8
+        .button
+            display: inline-block
+            position: absolute
+            bottom: 78px
+            left: 73px
+            cursor: pointer
+            .one
+                transition: 0.1s linear
+            .two
+                position: absolute
+                left: 0px
+                top: 3px
+                opacity: 0
+                transition: 0.1s linear
+            .title
+                width: 105px
+                height: 10px
+                position: absolute
+                left: 87px
+                color: #ffffff
+                font-family: Nunito Sans ExtraBold
+                font-size: 14px
+                font-weight: 400
+                line-height: 30px
+                text-transform: uppercase
+                // Text style for "play all"
+                letter-spacing: 2.8px
+                bottom: 25px
+                cursor: pointer
+                transition: 0.1s linear
+            .border
+                position: absolute
+                width: 90px
+                height: 90px
+                border: 2px solid #f6f7f8
+                border-radius: 100%
+                left: -32px
+                bottom: -25px
+                transition: 0.1s linear
+        .button:hover
+            .border
+                border: 2px solid #1a1a1d
+                transition: 0.1s linear
+            .one
+                opacity: 0
+                transition: 0.1s linear
+            .two
+                opacity: 1
+                transition: 0.1s linear
+            img
+            .title
+                color: #1a1a1d
+                transition: 0.1s linear
